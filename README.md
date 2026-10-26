@@ -2,7 +2,7 @@
 
 Laboratorio de pruebas para DNSSEC. Árbol DNS propio y aislado, construido con BIND9 sobre una máquina virtual Ubuntu, protegido con DNSSEC y auditado con una herramienta de verificación.
 
-Proyecto del Equipo 4 de la materia MA2005B, Aplicación de criptografía y seguridad, del Instituto Tecnológico y de Estudios Superiores de Monterrey. Socio formador: NIC México.
+Proyecto del Equipo 4 de la materia MA2005B, Aplicación de criptografía y seguridad.
 
 ## Contenido del repositorio
 
@@ -121,10 +121,11 @@ Las carpetas `zones/` incluyen llaves privadas (`.private`). Son llaves de un la
 
 ## Equipo 4
 
-- Emilio Alejandro González Huerta (A01286440)
-- Laurie Camila Hernández Pacheco (A01286569)
-- Angel Everardo Rodríguez Guevara (A01286630)
-- Emiliano Hervert de la Cruz (A01412606)
-- Fernando Álvarez Ruiz (A01286754)
+- Emilio Alejandro González Huerta
+- Laurie Camila Hernández Pacheco
+- Angel Everardo Rodríguez Guevara
+- Emiliano Hervert de la Cruz
+- Fernando Álvarez Ruiz
 
-Profesor: Alberto F. Martínez. Socio formador: NIC México, César Steve Salas S.
+Profesor: Alberto F. Martínez. 
+Socio formador: NIC México, César Steve Salas S.
