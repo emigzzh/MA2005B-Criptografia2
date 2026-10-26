@@ -1,0 +1,30 @@
+$TTL 86400
+@ IN SOA ns.signed. admin.signed. (
+    2026102001
+    3600
+    900
+    604800
+    86400
+)
+
+@ IN NS ns.signed.
+ns.signed. IN A 172.30.0.40
+
+beta.signed.  IN NS ns.beta.signed.
+ns.beta.signed. IN A 172.30.0.41
+
+gamma.signed. IN NS ns.gamma.signed.
+ns.gamma.signed. IN A 172.30.0.42
+
+zeta.signed.  IN NS  ns.zeta.signed.
+ns.zeta.signed.  IN A  172.30.0.43
+
+theta.signed.  IN NS  ns.theta.signed.
+ns.theta.signed.  IN A  172.30.0.44
+
+kappa.signed.  IN NS  ns.kappa.signed.
+ns.kappa.signed.  IN A  172.30.0.45
+
+$INCLUDE dsset-beta.signed.
+$INCLUDE dsset-zeta.signed.
+$INCLUDE dsset-theta.signed.

@@ -1,0 +1,82 @@
+; File written on Wed Oct 21 16:52:26 2026
+; dnssec_signzone version 9.18.30-0ubuntu0.20.04.2-Ubuntu
+badalg.test.		86400	IN SOA	ns.badalg.test. admin.badalg.test. (
+					2026102102 ; serial
+					3600       ; refresh (1 hour)
+					900        ; retry (15 minutes)
+					604800     ; expire (1 week)
+					86400      ; minimum (1 day)
+					)
+			86400	RRSIG	SOA 13 2 86400 (
+					20261120205226 20261021205226 42209 badalg.test.
+					4wtweowdtHXBtHPHllmbjKTWvfyrIg+3HjzO
+					0Vsd1tMtvCbyKDUVmLNsuXU0/Rdg6HNUOSKE
+					LNbXIfYHmnOI4A== )
+			86400	NS	ns.badalg.test.
+			86400	RRSIG	NS 13 2 86400 (
+					20261120205226 20261021205226 42209 badalg.test.
+					QeEuQY42+ajYCnkPhIjFCe7DDVXf/0CXDFqp
+					YuHY/umGJMI0FrxCorOenkjhKndKjkcpC/CU
+					E6ETdbsNcbX28g== )
+			86400	DNSKEY	256 3 13 (
+					ynqubOOPLtczbO1khajm/et0GWkyCR25ytiI
+					22Nlh0SBjb+K2JZz8Cajjc1aSvGzQADCetDf
+					PSfBohtcyHyxAw==
+					) ; ZSK; alg = ECDSAP256SHA256 ; key id = 42209
+			86400	DNSKEY	257 3 13 (
+					eYUy06Of5awRarjVAbY4oUD3LSTKDXh2IW5P
+					FiFRkqF3dQPvZCozNTkfapt3/KF8aqVY8thi
+					4QEkfIFFgwlA4g==
+					) ; KSK; alg = ECDSAP256SHA256 ; key id = 51714
+			86400	RRSIG	DNSKEY 13 2 86400 (
+					20261120205226 20261021205226 42209 badalg.test.
+					T92I9b+/O784UtwexgiLTPka9cIGSgBxr9HE
+					worG1za1FrA9Tv6KRlwF0hM65/JQ0kF6DjQI
+					UWZHlcNxQ0zx0g== )
+			86400	RRSIG	DNSKEY 13 2 86400 (
+					20261120205226 20261021205226 51714 badalg.test.
+					ZPLQ+FQCIt2hdDf43nGGOXRc88TNuVJb3Hby
+					qccmAAIpIeZoxHzBza5mDn0i17PKhfKlr8lv
+					a+MoGaUpHwGVvg== )
+			0	NSEC3PARAM 1 0 0 -
+			0	RRSIG	NSEC3PARAM 13 2 0 (
+					20261120205226 20261021205226 42209 badalg.test.
+					zk7VuDpQy6giK2a7oKEbKYYnJcqcBJxNFAFu
+					BkDeqltY0HNoIh9NFv4YfJhFzY2PL/tPyBrx
+					TIWUSiBqGpOZYg== )
+AMD5ICGMCDDTJR53E8INITHRLV6OCIM1.badalg.test. 86400 IN NSEC3 1 0 0 - (
+					L73C5D96MUVUD9OICSUDQLTLGG71V28K
+					NS SOA RRSIG DNSKEY NSEC3PARAM )
+			86400	RRSIG	NSEC3 13 3 86400 (
+					20261120205226 20261021205226 42209 badalg.test.
+					MqNYG6nzXW2DgvYPwpHDWKH8kPd1dAL1wWE5
+					QGz2AKhfkcRWkHuZeOa+rnZ2HLrU1z24t7wE
+					pw3A/vSHY6FoOw== )
+www.badalg.test.	86400	IN A	172.30.0.31
+			86400	RRSIG	A 13 3 86400 (
+					20261120205226 20261021205226 42209 badalg.test.
+					rtoV43y+/v4/JtuK7BMFWAPHgsjmOFIeQf1r
+					BT9dCtQm6TyG6HWOpBL2NQcklkbtodJ2qoLd
+					gh4g5SUNRqyzig== )
+ns.badalg.test.		86400	IN A	172.30.0.31
+			86400	RRSIG	A 13 3 86400 (
+					20261120205226 20261021205226 42209 badalg.test.
+					TtADObRYor4+gMO+F0MO2eh5psbLcBYhrnIJ
+					VW54jh509uFH+OzYooxZCe7zOz3hZ+2ajhvN
+					RCT+/RFtzx9T5Q== )
+4SG7RQ4HKOOPUJ0BV0SG5HCUJ7FTNBGS.badalg.test. 86400 IN NSEC3 1 0 0 - (
+					AMD5ICGMCDDTJR53E8INITHRLV6OCIM1
+					A RRSIG )
+			86400	RRSIG	NSEC3 13 3 86400 (
+					20261120205226 20261021205226 42209 badalg.test.
+					PYe90O4htgRzCNoBDbKRQ3muRAIsD1D56IfT
+					EyfDUmjExwV9Z0PiXPXh91z8yuf/pTwmB4+t
+					4DX/tRQmPQRg/Q== )
+L73C5D96MUVUD9OICSUDQLTLGG71V28K.badalg.test. 86400 IN NSEC3 1 0 0 - (
+					4SG7RQ4HKOOPUJ0BV0SG5HCUJ7FTNBGS
+					A RRSIG )
+			86400	RRSIG	NSEC3 13 3 86400 (
+					20261120205226 20261021205226 42209 badalg.test.
+					xU8siAeb4vWqg/xpm6eHE74SFDEr/9J51YWq
+					VDl4mMZwv0PgchG8g5WhUa+Ss6IQDhsQr0s9
+					1yjHbs2soeuLCA== )

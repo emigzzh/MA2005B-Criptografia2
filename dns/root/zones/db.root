@@ -1,0 +1,25 @@
+$TTL 86400
+@ IN SOA ns.root. admin.root (
+2026102102
+3600
+900
+604800
+86400
+)
+@ IN NS ns.root.
+ns.root. IN A 172.30.0.10
+
+; TLS UNSIGNED
+unsigned. IN NS ns.unsigned.
+ns.unsigned. IN A 172.30.0.20
+
+; TLD SIGNED
+signed. IN NS ns.signed.
+ns.signed. IN A 172.30.0.40
+
+; TLD TEST
+test.  IN NS  ns.test.
+ns.test.  IN A  172.30.0.30
+
+$INCLUDE dsset-signed.
+$INCLUDE dsset-test.

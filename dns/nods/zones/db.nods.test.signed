@@ -1,0 +1,82 @@
+; File written on Wed Oct 21 17:42:24 2026
+; dnssec_signzone version 9.18.30-0ubuntu0.20.04.2-Ubuntu
+nods.test.		86400	IN SOA	ns.nods.test. admin.nods.test. (
+					2026102102 ; serial
+					3600       ; refresh (1 hour)
+					900        ; retry (15 minutes)
+					604800     ; expire (1 week)
+					86400      ; minimum (1 day)
+					)
+			86400	RRSIG	SOA 13 2 86400 (
+					20261120214224 20261021214224 58925 nods.test.
+					Ub8fJep8ZVnpvlIwEXytG3PGP98R8a6nrEdx
+					PGGbThiuSFlmw+e3xwRhUHF+9vETpxM8bi8/
+					5IeMJnUEqbo4xA== )
+			86400	NS	ns.nods.test.
+			86400	RRSIG	NS 13 2 86400 (
+					20261120214224 20261021214224 58925 nods.test.
+					T1wiqyTB6PLUIylQpVhVQYdYJLuElE1CMOPY
+					t8B59B53ivPYOEL+UQi1xyLBl3u/F4dzdbXq
+					n9apeF52cZP6UQ== )
+			86400	DNSKEY	256 3 13 (
+					Wg8tvxRR+5UtNhUszRvAKce9lQhVGerW874A
+					nQIiK78UGP1ViXAZo7f1zdPmNXFs1ipCZs+Z
+					uk8VH8MHvTHyDg==
+					) ; ZSK; alg = ECDSAP256SHA256 ; key id = 58925
+			86400	DNSKEY	257 3 13 (
+					7IIfNd7tZZEcY6H12Ltc+GpnDBgsnO6t8vFQ
+					n3G2h4Rp2pU37hLr41t/aKjzbz6iBxG/lhDW
+					4evSd82Jq4a4yw==
+					) ; KSK; alg = ECDSAP256SHA256 ; key id = 41960
+			86400	RRSIG	DNSKEY 13 2 86400 (
+					20261120214224 20261021214224 41960 nods.test.
+					kKroies9tLoxVb6TM2KZHhO0geugX+5x072T
+					3la8ROR/w4+iH/bOxGTN8v+ARIm4WgAEZMcf
+					MUhdaxcIjML4+A== )
+			86400	RRSIG	DNSKEY 13 2 86400 (
+					20261120214224 20261021214224 58925 nods.test.
+					/+fvLt/8TtiyYUwwvemman1+4VEo7GzgaxwK
+					zZNPPK3PCP4tqrcmTo3w4IM8DQvbxYusWv+a
+					IXiqj51/f68GPg== )
+			0	NSEC3PARAM 1 0 0 -
+			0	RRSIG	NSEC3PARAM 13 2 0 (
+					20261120214224 20261021214224 58925 nods.test.
+					NYPaF9eroakfwQAERmiWcsNNwfbOBd4jllcU
+					RO3ibarJyOw3jtqb5d+L37fg3Pud3E64QXUi
+					5tvhtZqD58U6hQ== )
+www.nods.test.		86400	IN A	172.30.0.33
+			86400	RRSIG	A 13 3 86400 (
+					20261120214224 20261021214224 58925 nods.test.
+					fkdvZtgAAWSrTQeaBgPtjZ2qQz8F0nf1Mqcv
+					MRsVzn67RXoouUvGeUwKGIeH3G9vZ1pQY9Xk
+					NESp8xE1RIlhrw== )
+5HO9OEE4FV2N0E8UOMSAC2M3OHU6EPK1.nods.test. 86400 IN NSEC3 1 0 0 - (
+					G71JFEVG46EFSQ24CBCVRH3FLNLLDTMB
+					NS SOA RRSIG DNSKEY NSEC3PARAM )
+			86400	RRSIG	NSEC3 13 3 86400 (
+					20261120214224 20261021214224 58925 nods.test.
+					7kQuw6rm8r8LQPw2raI5Cf4hnNh83a9Ovvi/
+					5mhKK730h+br3vfUDq44Tt0crsxfL2GMOD0z
+					pfcjFzxHq+hmWQ== )
+ns.nods.test.		86400	IN A	172.30.0.33
+			86400	RRSIG	A 13 3 86400 (
+					20261120214224 20261021214224 58925 nods.test.
+					jmCiPD/J90BMcgtNqk0UA6FJUjnEfHMm4i5l
+					uOTd1ByweqEvpTwRosCDfq+GwwhFnPdJ10M4
+					NadhltNq9kPlZQ== )
+G71JFEVG46EFSQ24CBCVRH3FLNLLDTMB.nods.test. 86400 IN NSEC3 1 0 0 - (
+					POUB0O45VMVDAD47BSEALD2U9RH1TE2N
+					A RRSIG )
+			86400	RRSIG	NSEC3 13 3 86400 (
+					20261120214224 20261021214224 58925 nods.test.
+					waPuB4RheIzA6cCZpjzxF8V5uL35oRROVEQ/
+					4g73D7rITZBF/oTotGVUNfctFMjD13P7W/nJ
+					HZmYwrF/110dPw== )
+POUB0O45VMVDAD47BSEALD2U9RH1TE2N.nods.test. 86400 IN NSEC3 1 0 0 - (
+					5HO9OEE4FV2N0E8UOMSAC2M3OHU6EPK1
+					A RRSIG )
+			86400	RRSIG	NSEC3 13 3 86400 (
+					20261120214224 20261021214224 58925 nods.test.
+					IW9VpkLXc9k60Ba0O7sRrNUW7CpINtY9rL2+
+					IZao0yP7h5eZVM+EXGx+RpaS0G74kw9vN6l1
+					U/n7EVSfKEoKSA== )

@@ -1,0 +1,12 @@
+$TTL 86400
+@ IN SOA ns.kappa.signed. admin.kappa.signed. (
+    2026102101
+    3600
+    900
+    604800
+    86400
+)
+
+@ IN NS ns.kappa.signed.
+ns.kappa.signed. IN A 172.30.0.45
+www IN A 172.30.0.45

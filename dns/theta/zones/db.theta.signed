@@ -1,0 +1,12 @@
+$TTL 86400
+@ IN SOA ns.theta.signed. admin.theta.signed. (
+    2026102101
+    3600
+    900
+    604800
+    86400
+)
+
+@ IN NS ns.theta.signed.
+ns.theta.signed. IN A 172.30.0.44
+www IN A 172.30.0.44

@@ -1,0 +1,12 @@
+$TTL 86400
+@ IN SOA ns.nods.test. admin.nods.test. (
+    2026102101
+    3600
+    900
+    604800
+    86400
+)
+
+@ IN NS ns.nods.test.
+ns.nods.test. IN A 172.30.0.33
+www IN A 172.30.0.33

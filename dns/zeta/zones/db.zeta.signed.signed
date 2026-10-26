@@ -1,0 +1,82 @@
+; File written on Wed Oct 21 03:47:30 2026
+; dnssec_signzone version 9.18.30-0ubuntu0.20.04.2-Ubuntu
+zeta.signed.		86400	IN SOA	ns.zeta.signed. admin.zeta.signed. (
+					2026102102 ; serial
+					3600       ; refresh (1 hour)
+					900        ; retry (15 minutes)
+					604800     ; expire (1 week)
+					86400      ; minimum (1 day)
+					)
+			86400	RRSIG	SOA 13 2 86400 (
+					20261120074730 20261021074730 12642 zeta.signed.
+					eOizUPxq4DDmo8P/S7E7T6vCfgM+bsY6AcN3
+					ENd2OtCmH7T+ZZT5uZ/BD1d/0R5IVXuN5UAi
+					vPcwFfBwJfXKTA== )
+			86400	NS	ns.zeta.signed.
+			86400	RRSIG	NS 13 2 86400 (
+					20261120074730 20261021074730 12642 zeta.signed.
+					PbvyW1VtNjVKG7RUHBsYPkeiKCJRNLRAN6eM
+					cKeIzVFL4zBwZnob0XgcodT1JVmxyv2GG6Xa
+					CkxwctwMN04eSQ== )
+			86400	DNSKEY	256 3 13 (
+					gmAisfBBccMpvki9hqU+y95TLx30GYDi1lgP
+					zPZgUdRLX2Tmyazk1dvKOcgPnVIjSlUlS+44
+					ns3ek6R84q4FCA==
+					) ; ZSK; alg = ECDSAP256SHA256 ; key id = 12642
+			86400	DNSKEY	257 3 13 (
+					TFtgBYQo1mNyMPkzk6LFc0zREcxP0XhiB8hs
+					N7Pj8LMQ8SyD7BCPFJ/aejSjciksk/YdpODY
+					B1BsXnB+e1TfpQ==
+					) ; KSK; alg = ECDSAP256SHA256 ; key id = 32704
+			86400	RRSIG	DNSKEY 13 2 86400 (
+					20261120074730 20261021074730 12642 zeta.signed.
+					GMNKkwQsX13av5pOAsbKTFD/KnpP731cd2ln
+					5n5FughdOZm9TUTi5zs1D4W7KjvEmXmcF23Q
+					dW8UPc3R4nUAFQ== )
+			86400	RRSIG	DNSKEY 13 2 86400 (
+					20261120074730 20261021074730 32704 zeta.signed.
+					sw6JU0WGaar4Atup1q+fw7v32Q1k5wxPapjz
+					S7yHL72kwaxTP2F7KQBCvHd+gzvQLHRHcmlP
+					DGC1fW4ci7KpMQ== )
+			0	NSEC3PARAM 1 0 0 -
+			0	RRSIG	NSEC3PARAM 13 2 0 (
+					20261120074730 20261021074730 12642 zeta.signed.
+					l3RQsd6rp1pUto6A7J7f3VRZY0uPFFh8POiV
+					gkDTi1drWt5x1/5KyMEAD1lokFcSsg5xlLl+
+					cuyIfAhvoX5Vuw== )
+www.zeta.signed.	86400	IN A	172.30.0.43
+			86400	RRSIG	A 13 3 86400 (
+					20261120074730 20261021074730 12642 zeta.signed.
+					gbVh3qTRwagLo5ITJXwXDBHPwuN+sjzP1le8
+					w9a4ECHjD3LcT02vBdBq8jqnGfX9KqMvkBfv
+					2GfMzxXuSWpKBA== )
+JK4HR3CQUUUEG1LC5C94RK2UTRMU2SFI.zeta.signed. 86400 IN NSEC3 1 0 0 - (
+					P9TF8F4OF70AUR03QIODEEQE1DJNPJCF
+					A RRSIG )
+			86400	RRSIG	NSEC3 13 3 86400 (
+					20261120074730 20261021074730 12642 zeta.signed.
+					LenxsCXPt3puBgs04PsFR341ZRwd3QjvByTM
+					qYQotSdpPlRRvvzG0mgYP8+5YqbFsPjV7Mie
+					71wFmMM6pUQPGA== )
+G2USLQ8V5O5M3A17UUBRMRVTK6G55N26.zeta.signed. 86400 IN NSEC3 1 0 0 - (
+					JK4HR3CQUUUEG1LC5C94RK2UTRMU2SFI
+					A RRSIG )
+			86400	RRSIG	NSEC3 13 3 86400 (
+					20261120074730 20261021074730 12642 zeta.signed.
+					qTfL5va2xTJJd4mv9SGkBUyii7XPUIetFd8K
+					C7Et+3EZvLpPISV2MlNItMpsNKuhzWs+Qqbu
+					/SSyFf9G3Z1gIg== )
+ns.zeta.signed.		86400	IN A	172.30.0.43
+			86400	RRSIG	A 13 3 86400 (
+					20261120074730 20261021074730 12642 zeta.signed.
+					TXX8MGWCVedpn/X2NIu3/EcyZdFYTNz92C7y
+					idBLSjcGdCHtBEhrKuPi85e0Oo3pvkVarXkt
+					aNGujdi/d7Xpqw== )
+P9TF8F4OF70AUR03QIODEEQE1DJNPJCF.zeta.signed. 86400 IN NSEC3 1 0 0 - (
+					G2USLQ8V5O5M3A17UUBRMRVTK6G55N26
+					NS SOA RRSIG DNSKEY NSEC3PARAM )
+			86400	RRSIG	NSEC3 13 3 86400 (
+					20261120074730 20261021074730 12642 zeta.signed.
+					h82vcFnVXME6Rl+tDkgxmsaRi/lKJL4CJtbQ
+					4zVKkZcx4EGwc7iIcyfaOMmwgNskwQjN5yMG
+					27AozSs8Fmmvaw== )

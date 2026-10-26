@@ -1,0 +1,14 @@
+$TTL 86400
+@ IN SOA ns.walkable.test. admin.walkable.test. (
+    2026102102
+    3600
+    900
+    604800
+    86400
+)
+
+@ IN NS ns.walkable.test.
+ns.walkable.test. IN A 172.30.0.34
+www IN A 172.30.0.34
+mail IN A 172.30.0.34
+ftp IN A 172.30.0.34

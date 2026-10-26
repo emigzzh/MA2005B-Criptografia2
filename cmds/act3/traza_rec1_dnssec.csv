@@ -1,0 +1,24 @@
+frame.number,ip.src,ip.dst,dns.qry.name,dns.qry.type,dns.flags.rcode,dns.flags.authenticated,dns.resp.type,dns.resp.ttl,dns.dnskey.flags,dns.dnskey.protocol,dns.dnskey.algorithm,dns.rrsig.type_covered,dns.rrsig.algorithm,dns.rrsig.key_tag,dns.rrsig.signers_name,dns.rrsig.signature_expiration,dns.ds.key_id,dns.ds.algorithm,dns.ds.digest_type
+1,127.0.0.53,127.0.0.1,browser-intake-us5-datadoghq.com,AAAA,NOERROR,0,"AAAA,41",300,,,,,,,,,,,
+2,127.0.0.53,127.0.0.1,browser-intake-us5-datadoghq.com,AAAA,NOERROR,0,"AAAA,41",300,,,,,,,,,,,
+3,127.0.0.53,127.0.0.1,browser-intake-us5-datadoghq.com,65,NOERROR,0,41,,,,,,,,,,,,
+4,127.0.0.53,127.0.0.1,browser-intake-us5-datadoghq.com,A,NOERROR,0,"A,41",300,,,,,,,,,,,
+5,127.0.0.53,127.0.0.1,browser-intake-us5-datadoghq.com,A,NOERROR,0,"A,41",300,,,,,,,,,,,
+6,127.0.0.53,127.0.0.1,browser-intake-us5-datadoghq.com,A,NOERROR,0,"A,41",300,,,,,,,,,,,
+13,172.30.0.10,172.30.0.10,<Root>,NS,NOERROR,0,"NS,RRSIG,41","86400,86400",,,,NS,13,58444,<Root>,"Nov 12, 2026 01:07:13.000000000 CST",,,
+14,172.30.0.10,172.30.0.10,signed,NS,NOERROR,0,"NS,DS,RRSIG,A,41","86400,86400,86400,86400",,,,DS,13,58444,<Root>,"Nov 12, 2026 01:07:13.000000000 CST",0x0000f34a,13,2
+16,172.30.0.40,172.30.0.40,beta.signed,NS,NOERROR,0,"NS,DS,RRSIG,A,41","86400,86400,86400,86400",,,,DS,13,31966,signed,"Nov 12, 2026 02:03:10.000000000 CST",0x000029ed,13,2
+18,172.30.0.50,172.30.0.50,www.beta.signed,A,NOERROR,0,"A,RRSIG,NS,RRSIG,A,RRSIG,41","86400,86400,86400,86400,86400,86400",,,,"A,NS,A","13,13,13","9303,9303,9303","beta.signed,beta.signed,beta.signed","Nov 12, 2026 01:58:30.000000000 CST,Nov 12, 2026 01:58:30.000000000 CST,Nov 12, 2026 01:58:30.000000000 CST",,,
+19,172.30.0.100,172.30.0.100,www.beta.signed,A,NOERROR,0,"A,RRSIG,41","86400,86400",,,,A,13,9303,beta.signed,"Nov 12, 2026 01:58:30.000000000 CST",,,
+22,172.30.0.50,172.30.0.50,beta.signed,DNSKEY,NOERROR,0,"DNSKEY,DNSKEY,RRSIG,RRSIG,41","86400,86400,86400,86400","0x00000100,0x00000101","3,3","13,13","DNSKEY,DNSKEY","13,13","9303,10733","beta.signed,beta.signed","Nov 12, 2026 01:58:30.000000000 CST,Nov 12, 2026 01:58:30.000000000 CST",,,
+23,172.30.0.100,172.30.0.100,beta.signed,DNSKEY,NOERROR,0,"DNSKEY,DNSKEY,RRSIG,RRSIG,41","86400,86400,86400,86400","0x00000100,0x00000101","3,3","13,13","DNSKEY,DNSKEY","13,13","9303,10733","beta.signed,beta.signed","Nov 12, 2026 01:58:30.000000000 CST,Nov 12, 2026 01:58:30.000000000 CST",,,
+26,172.30.0.40,172.30.0.40,beta.signed,DS,NOERROR,0,"DS,RRSIG,41","86400,86400",,,,DS,13,31966,signed,"Nov 12, 2026 02:03:10.000000000 CST",0x000029ed,13,2
+27,172.30.0.100,172.30.0.100,beta.signed,DS,NOERROR,0,"DS,RRSIG,41","86400,86400",,,,DS,13,31966,signed,"Nov 12, 2026 02:03:10.000000000 CST",0x000029ed,13,2
+30,172.30.0.50,172.30.0.50,nonexistente.beta.signed,A,NXDOMAIN,0,"SOA,RRSIG,NSEC3,NS,SOA,RRSIG,DNSKEY,NSEC3PARAM,RRSIG,NSEC3,A,RRSIG,RRSIG,41","86400,86400,86400,86400,86400,86400",,,,"SOA,NSEC3,NSEC3","13,13,13","9303,9303,9303","beta.signed,beta.signed,beta.signed","Nov 12, 2026 01:58:30.000000000 CST,Nov 12, 2026 01:58:30.000000000 CST,Nov 12, 2026 01:58:30.000000000 CST",,,
+31,172.30.0.100,172.30.0.100,nonexistente.beta.signed,A,NXDOMAIN,0,"SOA,RRSIG,RRSIG,NSEC3,NS,SOA,RRSIG,DNSKEY,NSEC3PARAM,RRSIG,NSEC3,A,RRSIG,41","10800,10800,10800,10800,10800,10800",,,,"SOA,NSEC3,NSEC3","13,13,13","9303,9303,9303","beta.signed,beta.signed,beta.signed","Nov 12, 2026 01:58:30.000000000 CST,Nov 12, 2026 01:58:30.000000000 CST,Nov 12, 2026 01:58:30.000000000 CST",,,
+34,172.30.0.40,172.30.0.40,gamma.signed,NS,NOERROR,0,"NS,NSEC3,NS,RRSIG,A,41","86400,86400,86400,86400",,,,NSEC3,13,31966,signed,"Nov 12, 2026 02:03:10.000000000 CST",,,
+36,172.30.0.60,172.30.0.60,www.gamma.signed,A,NOERROR,0,"A,NS,A,41","86400,86400,86400",,,,,,,,,,,
+37,172.30.0.100,172.30.0.100,www.gamma.signed,A,NOERROR,0,"A,41",86400,,,,,,,,,,,
+38,127.0.0.53,127.0.0.1,ocsp.digicert.com,A,NOERROR,0,"5,5,A,A,41","6256,60,299,299",,,,,,,,,,,
+39,127.0.0.53,127.0.0.1,ocsp.digicert.com,A,NOERROR,0,"5,5,A,A,41","6256,60,299,299",,,,,,,,,,,
+41,127.0.0.53,127.0.0.1,ocsp.digicert.com,A,NOERROR,0,"5,5,A,A,41","6251,59,299,299",,,,,,,,,,,

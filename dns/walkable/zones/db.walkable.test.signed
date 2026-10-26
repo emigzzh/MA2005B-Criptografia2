@@ -1,0 +1,94 @@
+; File written on Wed Oct 21 14:52:19 2026
+; dnssec_signzone version 9.18.30-0ubuntu0.20.04.2-Ubuntu
+walkable.test.		86400	IN SOA	ns.walkable.test. admin.walkable.test. (
+					2026102103 ; serial
+					3600       ; refresh (1 hour)
+					900        ; retry (15 minutes)
+					604800     ; expire (1 week)
+					86400      ; minimum (1 day)
+					)
+			86400	RRSIG	SOA 13 2 86400 (
+					20261120185219 20261021185219 34214 walkable.test.
+					mLSc8hnTyohNYMy4A31gcvO18M0ZZ1iDHG9h
+					wGMakNboxjer4+CqR2DQnFtjXVCZlGZ5XJvD
+					NhxXCjbO2MN2ug== )
+			86400	NS	ns.walkable.test.
+			86400	RRSIG	NS 13 2 86400 (
+					20261120185219 20261021185219 34214 walkable.test.
+					vfLOkKZF5iuwJxQa2JPOJdtaOp8Ly+4c7TZO
+					p1pW/eKGwxRkHLULlpJ69tRwCLdmhX/rUDf7
+					jUSwXC/blcoGGA== )
+			86400	NSEC	ftp.walkable.test. NS SOA RRSIG NSEC DNSKEY
+			86400	RRSIG	NSEC 13 2 86400 (
+					20261120185219 20261021185219 34214 walkable.test.
+					ssN1Nf1HC6k8h4Lwm8VDcTXAe4SJDlU8oMWB
+					rjPcqn7S8HndVj/dGHAt1LX6R6higFP/U9o2
+					YG3RXUwPZTqkBg== )
+			86400	DNSKEY	256 3 13 (
+					OP6nMQ+wHHSfZrThzw2xOy09AVyZtpz7c8pn
+					mbfcGuuQAhxkspRo5GixaGHIs4NGjOmBPBXL
+					FSs/hTuWknthnA==
+					) ; ZSK; alg = ECDSAP256SHA256 ; key id = 34214
+			86400	DNSKEY	257 3 13 (
+					9FMu4256CurdS5ojZZ/NLzppXAoDuEJtuGv5
+					vQ80LqfuanLTdFs0kMxneYb1m+JdlxFmvNk/
+					6Nlgt60QQv0vAg==
+					) ; KSK; alg = ECDSAP256SHA256 ; key id = 32583
+			86400	RRSIG	DNSKEY 13 2 86400 (
+					20261120185219 20261021185219 32583 walkable.test.
+					Do4ww5GfQFevKyV/yfD/X+FZi9T/gTlqb7Sg
+					BKpNeaMc0MsjImEywceq/+Fupr5VeE8MjHFJ
+					w0jpU3HjdvL1lg== )
+			86400	RRSIG	DNSKEY 13 2 86400 (
+					20261120185219 20261021185219 34214 walkable.test.
+					IJWEit4FrKX85G3Bp5cLIYLbEbGNeRCrjQU5
+					Sk9EbsaUAvkwsF40JsfFkRY+u1EPv/pCAj76
+					OomHEHexV4Z/nA== )
+www.walkable.test.	86400	IN A	172.30.0.34
+			86400	RRSIG	A 13 3 86400 (
+					20261120185219 20261021185219 34214 walkable.test.
+					ms3sdxYvHpWSqxnBfxaDt54d7hKLVHC8IYFX
+					WbaHMzJ2CFEn+vkC5kXoP39jWbGrDVXCDRYV
+					/rvFukFzIiTmkw== )
+			86400	NSEC	walkable.test. A RRSIG NSEC
+			86400	RRSIG	NSEC 13 3 86400 (
+					20261120185219 20261021185219 34214 walkable.test.
+					U60cOVX5taevZ1PlHdM84z9E3FSYEC9Cf9sU
+					q4jG1hoR8Ovavtp8BoiaD+O0ec3u5/NEqWmi
+					FsjORr0rHQYr9Q== )
+ftp.walkable.test.	86400	IN A	172.30.0.34
+			86400	RRSIG	A 13 3 86400 (
+					20261120185219 20261021185219 34214 walkable.test.
+					xR1SQtjIxK/MwC9c1NRAderG7Twk05aIpwiy
+					/rziLcCXjmtyMU4iYQV/u8Lr2PSqsXvUl6tn
+					4JZesd9ShgrmDg== )
+			86400	NSEC	mail.walkable.test. A RRSIG NSEC
+			86400	RRSIG	NSEC 13 3 86400 (
+					20261120185219 20261021185219 34214 walkable.test.
+					Ft++O4iIX/8t4KaYuh9HzM4TeVaMHMOyiSYw
+					+qUzHSAfeNNH8KB0iu2BUUIL0kRbJkFc22eg
+					bNS/rdKsT4jg7w== )
+mail.walkable.test.	86400	IN A	172.30.0.34
+			86400	RRSIG	A 13 3 86400 (
+					20261120185219 20261021185219 34214 walkable.test.
+					QrffCI/OrRA0rS7f2MTnqjXgbIIrNnYd1Z0h
+					5lQTgwQUWRvoJRDBfB9ojypQHGKbIfRgD+O1
+					ehDaOALSH3b5Ug== )
+			86400	NSEC	ns.walkable.test. A RRSIG NSEC
+			86400	RRSIG	NSEC 13 3 86400 (
+					20261120185219 20261021185219 34214 walkable.test.
+					KegMBzO8vSOtCXdKglkyxVjSNlMdR6+iafkE
+					6OIWxKFkCNr4taSSTp6I13cbTef05+nDhX6S
+					dYNZZ+fYhkg2ag== )
+ns.walkable.test.	86400	IN A	172.30.0.34
+			86400	RRSIG	A 13 3 86400 (
+					20261120185219 20261021185219 34214 walkable.test.
+					pzeRPaD/2wmcvbhOsUFinolMY3YRPFPvrsWG
+					3aRjfkFF05fXQuh1uDwi/Bt0BRvRSrJd0xMG
+					3wS23nyIkPzUUg== )
+			86400	NSEC	www.walkable.test. A RRSIG NSEC
+			86400	RRSIG	NSEC 13 3 86400 (
+					20261120185219 20261021185219 34214 walkable.test.
+					KgqDwOcBbNzGmIouyi9nCvKUQGvVUD6V4opU
+					4ToFBzZokCSNXJT0AvAEDd/d5gnT9m1SiyeR
+					xyuDWFSlTwu3VQ== )
